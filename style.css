@@ -1,0 +1,46 @@
+body {
+  background-image: url(letrasIMG.png);
+   
+}
+
+.titulo {
+  padding: 15px;
+  width: 30vw;
+  margin: auto;
+  color: whitesmoke;
+  font-family: 'Patrick Hand', cursive;
+  font-weight: bold;
+  background-color: #3B6791;
+  border-radius: 5px;
+  font-size: 55px;
+
+}
+
+.btn {
+  border: 0;
+  color: white;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 20px;
+  background-color: #DC313A;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 0.5em;
+}
+
+.text-input {
+  border-radius: 0.5em;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  padding: 0.5em;
+  width: 30%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: whitesmoke;
+  font-size: 20px;
+  font-family: 'Patrick Hand', cursive;
+  letter-spacing: 1px;
+}
+
+
