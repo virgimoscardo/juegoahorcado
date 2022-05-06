@@ -1,5 +1,7 @@
 body {
-  background-image: url(letrasIMG.png);
+  background-image: url(fondo.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
    
 }
 
@@ -10,7 +12,7 @@ body {
   color: whitesmoke;
   font-family: 'Patrick Hand', cursive;
   font-weight: bold;
-  background-color: #3B6791;
+  background-color: #6a2578;
   border-radius: 5px;
   font-size: 55px;
 
@@ -21,7 +23,7 @@ body {
   color: white;
   font-family: 'Patrick Hand', cursive;
   font-size: 20px;
-  background-color: #DC313A;
+  background-color: #169d8d;
   padding: 20px;
   margin-top: 10px;
   margin-bottom: 10px;

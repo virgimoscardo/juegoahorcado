@@ -1,7 +1,7 @@
 var tablero = document.querySelector("canvas");
 var pincel = tablero.getContext("2d");
 pincel.font = "bold 25px sans-serif";
-pincel.strokeStyle = "darkblue";
+pincel.strokeStyle = "#6a2578";
 
 function dibujarTablero(){
     pincel.fillStyle = "whitesmoke";

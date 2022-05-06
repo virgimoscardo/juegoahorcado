@@ -51,7 +51,7 @@ var numAgrup;
 
 
 btnIniciarJuego = document.querySelector("#iniciar-juego");
-btnIniciarJuego.addEventListener("click", function(event){
+btnIniciarJuego.addEventListener("click", function(){
 
   numNoAgrup = 0;
   agrupados = [];
@@ -74,65 +74,66 @@ btnIniciarJuego.addEventListener("click", function(event){
                 // ACIERTOS
                 for (var i = 0; i < palabraAhorcadoString.length; i++) {
                     if (letra == palabraAhorcadoString[i]) {
-                        pincel.fillStyle = "#3B6791";
+                        pincel.fillStyle = "#169d8d";
                         pincel.fillText(letra,(505+50*i),495);
                         numAgrup = numAgrup + 1;
                     }
                 }
                 
                 if (numAgrup == palabraAhorcadoString.length) {
-                    pincel.fillStyle = "#3B6791";
+                    pincel.fillStyle = "#169d8d";
                     pincel.fillText("Ganaste, felicidades!",650,200);
                     pincel.clearRect(0,0,450,pantalla.height);
-                    pincel.strokeStyle = "#3B6791";
+                    pincel.strokeStyle = "#169d8d";
+                    ;
                 }
                 
                 // ERRORES
                 if (!palabraAhorcadoString.includes(letra)) {
                     if (numNoAgrup == 0) {
                         dibujarCabeza();
-                        pincel.fillStyle = "#DC313A";
+                        pincel.fillStyle = "#dd297a";
                         pincel.fillText(letra,(550+50*numNoAgrup),400);
                         numNoAgrup = numNoAgrup + 1;
                     }
                     else if (numNoAgrup == 1) {
-                        pincel.fillStyle = "#DC313A";
+                        pincel.fillStyle = "#dd297a";
                         pincel.fillText(letra,(550+50*numNoAgrup),400);
                         dibujarCuerpo();
                         numNoAgrup = numNoAgrup + 1;
                     }
                     else if (numNoAgrup == 2) {
-                        pincel.fillStyle = "#DC313A";
+                        pincel.fillStyle = "#dd297a";
                         pincel.fillText(letra,(550+50*numNoAgrup),400);
                         dibujarPiernaIzq();
                         numNoAgrup = numNoAgrup + 1;
                     }
                     else if (numNoAgrup == 3) {
-                        pincel.fillStyle = "#DC313A";
+                        pincel.fillStyle = "#dd297a";
                         pincel.fillText(letra,(550+50*numNoAgrup),400);
                         dibujarPiernaDer();
                         numNoAgrup = numNoAgrup + 1;
                     }
                     else if (numNoAgrup == 4) {
-                        pincel.fillStyle = "#DC313AB";
+                        pincel.fillStyle = "#dd297a";
                         pincel.fillText(letra,(550+50*numNoAgrup),400);
                         dibujarBrazoIzq();
                         numNoAgrup = numNoAgrup + 1;
                     }
                     else if (numNoAgrup == 5) {
-                        pincel.fillStyle = "#DC313A";
+                        pincel.fillStyle = "#dd297a";
                         pincel.fillText(letra,(550+50*numNoAgrup),400);
                         dibujarBrazoDer();
                         numNoAgrup = numNoAgrup + 1;
                     }
                                        
                     else if (numNoAgrup == 6) {
-                        pincel.fillStyle = "#DC313A";
+                        pincel.fillStyle = "#dd297a";
                         pincel.fillText(letra,(550+50*numNoAgrup),400);
                         dibujarLineaFinal();
-                        pincel.fillStyle = "#DC313A";
+                        pincel.fillStyle = "#dd297a";
                         pincel.fillText("Fin del juego!",690,200);
-                        pincel.strokeStyle = "#DC313A";
+                        pincel.strokeStyle = "#dd297a";
                         
                     }
                 }
@@ -147,7 +148,16 @@ btnIniciarJuego.addEventListener("click", function(event){
 
     });
 
+
 });
+
+
+btnReiniciarJuego = document.querySelector("#reiniciar-juego");
+btnReiniciarJuego.addEventListener("click", function(){
+    location.reload();
+});
+
+
 
 
 
