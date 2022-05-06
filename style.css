@@ -45,4 +45,10 @@ body {
   letter-spacing: 1px;
 }
 
+#reiniciar-juego{
+  display:flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
